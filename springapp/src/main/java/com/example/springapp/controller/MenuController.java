@@ -33,7 +33,7 @@ public class MenuController {
         }
     }
 
-    @GetMapping("/")
+    @GetMapping("/idaad")
     public ResponseEntity<List<MenuItem>> getAllMenuItems() {
         List<MenuItem> menuItems = menuService.getAllMenuItems();
         return ResponseEntity.status(HttpStatus.OK).body(menuItems);
